@@ -51,6 +51,10 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater(){
+  for(let)
+
+}
 
 
 
@@ -69,6 +73,9 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+// for(let i = 0; i < 57; i++){
+//   for(let j = 0; j < 57; i++)
+// }
 
 
 
@@ -99,8 +106,8 @@ var cat = {
 //Code Here
 var grumpyActivity;
 var fluffy2ndFriend;
-
-
+grumpyActivity = cat.catFriends.activities[1]
+fluffy2ndFriend = cat.catFriends.activities[0]
 
 ////////// PROBLEM 4 //////////
 
@@ -158,5 +165,13 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
+// function looper(numsArr){
+//   for(let i = 0; i < numsArr; i++){
+//     if(i % 2 === 0){
+//       numsArr = 'even';
+//     }
+//   }else if(i % 2 !=== 0){
+//     numsArr = 'odd';
+//   }
+// }
 

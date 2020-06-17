@@ -22,8 +22,12 @@ var carDetails = {
 */
 
 //Code Here
+// let {color} = carDetails;
+// let {make} = carDetails;
+// let {model} = carDetails;
+// let {year} = carDetails;
 
-
+let carDetails2 = Object.assign({}, carDetails);
 
 ////////// PROBLEM 2 //////////
 
@@ -33,9 +37,15 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+// function greeting( obj ) {
   //Code Here
-  
+  function greeting( obj){
+
+    let obj = {
+      title: "",
+      firstName: "", 
+      lastName
+    }
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -55,8 +65,11 @@ function greeting( obj ) {
 
 //Code Here
 
+function totalPopulation (obj) {
 
-
+  let {utah, california, texas, arizona} = obj;
+    return utah + california + texas + arizona;
+}
 ////////// PROBLEM 4 //////////
 
 /*
@@ -68,6 +81,13 @@ function greeting( obj ) {
 */
 
 //Code Here
+function ingredients (obj){
+  let {carb, fat, protein} = obj
+  let newArr = []
+  newArr.push(carb, fat, protein)
+  return newArr;
+}
+
 
 
 
@@ -86,6 +106,9 @@ function greeting( obj ) {
 */
 
 //Code Here
+function largeNumbers({first, second, third}){
+  return Math.min(first, second, third)
+}
 
 
 
@@ -98,5 +121,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function numberGroups({a, b, c}){
+  if (a.length > b.length && a.length > c.length){
+    return a;
+  }else if(b.length > a.length && b.length > c.length){
+    return b;
+  }else if(c.length > a.length && c.length > b.length){
+    return c;
+  }
+};
 
